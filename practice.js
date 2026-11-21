@@ -1,15 +1,18 @@
 "use strict";
+
 const btnKn = document.getElementById("btn-kn");
 const btnHi = document.getElementById("btn-hi");
 const btnEn = document.getElementById("btn-en");
 const result = document.getElementById("result");
-btnKn.addEventListener("click", function () {
-    result.textContent = "You chose kannada"
-});
+function showLanguage(lang) {
+    result.textContent = "you chose: " + lang;
+}
+btnKn.addEventListener("click", function () { showLanguage("kannada") }
+);
 btnHi.addEventListener("click", function () {
-    result.textContent = "You chose hindi"
+    showLanguage("hindi")
 });
 btnEn.addEventListener("click", function () {
-    result.textContent = "You chose english"
+    showLanguage("english")
 });
 // console.log(result);
