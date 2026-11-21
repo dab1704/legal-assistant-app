@@ -8,8 +8,10 @@ const squaree = (a) => {
 }
 // const name = "Debangshu";
 function greet(name = "friend") {
-    return "hello" + name + "!";
+    return `hello ${name}!`;
 }
-
+const lang = "english";
+console.log(lang.length);
+console.log(lang.toUpperCase())
 console.log(square(9));
 console.log(greet());
