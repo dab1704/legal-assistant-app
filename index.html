@@ -8,14 +8,22 @@
 </head>
 
 <body>
-    <!-- <script src="script-1.1.js"></script> -->
-    <!-- <script src="script-1.2.js"></script> -->
-    <h1>Legal Assistant App</h1>
-    <button id="btn-kn">ಕನ್ನಡ</button>
-    <button id="btn-hi">हिंदी</button>
-    <button id="btn-en">English</button>
-    <p id="result"></p>
-    <script src="session3.js"></script>
+    <div id="screen-1">
+        <h1>Legal Assistant App</h1>
+        <button id="btn-kn">ಕನ್ನಡ</button>
+        <button id="btn-hi">हिंदी</button>
+        <button id="btn-en">English</button>
+    </div>
+    <div id="screen-2" hidden>
+        <h2>What happened?</h2>
+        <ul id="situation-list"></ul>
+    </div>
+    <div id="screen-3" hidden>
+        <h2 id="situation-title"></h2>
+        <ol id="steps-list"></ol>
+        <button id="btn-back">Back</button>
+    </div>
+    <script src="lessons/practice.js"></script>
 </body>
 
 </html>
