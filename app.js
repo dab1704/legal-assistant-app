@@ -24,7 +24,7 @@ function showScreen(n) {
 };
 function showSteps(s) {
     situationTitle.textContent = s.title;
-    stepsList.innerHTML = "";
+    // stepsList.innerHTML = "";
     for (const step of s.steps) {
         const li = document.createElement("li");
         li.textContent = step;
